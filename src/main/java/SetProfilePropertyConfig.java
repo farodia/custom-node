@@ -1,3 +1,4 @@
+import com.sun.identity.sm.RequiredValueValidator;
 import io.vavr.collection.Map;
 import org.forgerock.openam.annotations.sm.Attribute;
 
@@ -7,6 +8,6 @@ public interface SetProfilePropertyConfig {
      *
      * @return a map of properties.
      */
-    @Attribute(order = 100)
+    @Attribute(order = 100, validators = RequiredValueValidator.class)
     Map<String, String> properties();
 }
