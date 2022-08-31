@@ -1,11 +1,9 @@
 import com.google.inject.assistedinject.Assisted;
-import groovy.util.logging.Slf4j;
 import org.forgerock.openam.auth.node.api.*;
 import org.forgerock.openam.core.CoreWrapper;
 
 import javax.inject.Inject;
 
-@Slf4j
 @Node.Metadata(outcomeProvider = SetProfilePropertyOutcomeProvider.class,
         configClass = SetProfilePropertyConfig.class,
         tags = {"utilities"})

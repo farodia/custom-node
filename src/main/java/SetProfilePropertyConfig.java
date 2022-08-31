@@ -1,6 +1,7 @@
 import com.sun.identity.sm.RequiredValueValidator;
-import io.vavr.collection.Map;
 import org.forgerock.openam.annotations.sm.Attribute;
+
+import java.util.Map;
 
 public interface SetProfilePropertyConfig {
     /**
