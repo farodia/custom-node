@@ -6,5 +6,8 @@ A simple authentication node for ForgeRock's Identity Platform 7.2 and above. Th
 ___
 *Properties*:The user profile attributes to set. 
 
-    Key = profile attribute name Value = Shared State Object Name or "literal"
+    Key = profile attribute name
+    Value = Shared State Object Name or "literal"
 
+### Tasks
+1. Put shares states for properties when set property successfully given a new valid property
