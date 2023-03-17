@@ -1,3 +1,4 @@
+import com.iplanet.dpro.session.service.SessionService;
 import org.forgerock.openam.auth.node.api.Action;
 import org.forgerock.openam.auth.node.api.ExternalRequestContext;
 import org.forgerock.openam.auth.node.api.NodeProcessException;
@@ -24,6 +25,7 @@ public class SetProfilePropertyNodeTest {
     @Mock
     private SetProfilePropertyConfig config;
     private SetProfilePropertyNode node;
+    private SessionService sessionService;
 
     @BeforeEach
     public void setup() {

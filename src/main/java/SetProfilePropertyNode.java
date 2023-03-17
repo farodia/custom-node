@@ -1,4 +1,5 @@
 import com.google.inject.assistedinject.Assisted;
+import com.sun.identity.sm.DNMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.forgerock.openam.auth.node.api.*;
 import org.forgerock.openam.core.CoreWrapper;
@@ -27,6 +28,9 @@ public class SetProfilePropertyNode extends SingleOutcomeNode {
             actionBuilder.putSessionProperty(key, value);
             state.putShared(key, value);
         });
+//        AMIdentity;
+//        IdUtils.getIdentity();
+        new DNMapper();
         return goToNext().build();
     }
 }

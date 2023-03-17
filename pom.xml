@@ -104,10 +104,6 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
-                        <configuration>
-                            <shadedArtifactAttached>true</shadedArtifactAttached>
-                            <shadedClassifierName>jackofall</shadedClassifierName> <!-- Any name that makes sense -->
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -118,7 +114,7 @@
         <repository>
             <id>forgerock-build-dependencies</id>
             <name>ForgeRock Dependencies Repository</name>
-            <url>https://maven.forgerock.org/artifactory/forgerock-openam-7.1.1-dependencies</url>
+            <url>https://maven.forgerock.org/artifactory/forgerock-openam-7.2.0-dependencies</url>
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
